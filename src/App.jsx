@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 // import IS_DEVELOPMENT from './config';
 import { useFilters } from './hooks/useFilters';
+import { Cart } from './components/Cart';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
   return(
     <>
       <Header />
-      <Products products ={filteredProducts}/>
+      <Cart></Cart>
+      <Products products ={filteredProducts}  />
       {/* {IS_DEVELOPMENT && <Footer filters={filters}></Footer>} */}
     </>
   )

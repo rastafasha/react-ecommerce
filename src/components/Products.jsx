@@ -1,5 +1,5 @@
 import './Products.css';
-import { AddToCartIcon } from './Icons';
+import { AddToCartIcon } from './icons';
 
 export function Products({products}) {
     return (

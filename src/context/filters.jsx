@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 export const FiltersContext = createContext();
 //2. Crear el provider
 export function FiltersProvider ({ children }) {
+    
     const [filters, setFilters] = useState({
         category:'all',
         minPrice:0

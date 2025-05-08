@@ -1,13 +1,13 @@
-import { CartIcon,ClearCartIcon} from './icons';
 import{useId} from 'react';
-import './Cart.css'
+import { CartIcon, ClearCartIcon} from './icons';
+import './Cart.css';
 
 export function Cart(){
     const cartCheckboxId = useId();
 
     return (
         <>
-        <label className='cart-button' htmlFor='cart'>
+        <label className='cart-button' htmlFor={cartCheckboxId}>
             <CartIcon></CartIcon>
         </label>
         <input id={cartCheckboxId} type='checkbox' hidden />
